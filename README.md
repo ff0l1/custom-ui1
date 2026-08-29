@@ -2,9 +2,9 @@
 
 A glass overlay UI for Windows. Immediate-mode C++, Win32, and Direct3D 11.
 
-<video src="docs/preview.mp4" controls muted loop playsinline width="720"></video>
-
-[Preview](docs/preview.mp4)
+<p align="center">
+  <img src="docs/preview.webp" alt="imgui-2 preview">
+</p>
 
 imgui-2 is built on [custom-framework](https://github.com/ff0l/custom-framework) — the same drawing core, fonts, input, and Direct3D 11 host. Overlay chrome, glass styling, click-through, and the `imgui2` API are new.
 
@@ -64,7 +64,7 @@ src/effects         reactive backgrounds
 src/engine          canvas, fonts, input, D3D11
 src/host            Eleven host
 demos/preview       bundled menu
-docs/preview.mp4    this page
+docs                preview on this page
 ```
 
 The engine in `src/engine` started from [custom-framework](https://github.com/ff0l/custom-framework).
