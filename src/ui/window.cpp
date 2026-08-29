@@ -77,7 +77,7 @@ window::window( const char* Title ) {
         Style->CloseSize
     );
 
-    unsigned int WindowId = Context->Hash( Title ? Title : "ImgU2##window" );
+    unsigned int WindowId = Context->Hash( Title ? Title : "imgui-2##window" );
     unsigned int CloseId = Context->Hash( "##imgui2.close" );
     unsigned int DragId = Context->Hash( "##imgui2.drag" );
 
@@ -154,7 +154,7 @@ window::window( const char* Title ) {
         Mark
     );
 
-    const char* Shown = Title ? Title : "ImgU2";
+    const char* Shown = Title ? Title : "imgui-2";
     float TitleLeft = WellLeft;
     float TitleTop = Bounds.Top + ( Style->TitleHeight - Heading->LineSpan - Heading->Leading ) * 0.5f + 1.0f * Style->Scale;
     Canvas->Write( Heading.get( ), CVector( TitleLeft, TitleTop ), Style->Text, Shown );
