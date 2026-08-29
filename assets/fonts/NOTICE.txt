@@ -1,0 +1,22 @@
+Inter Regular / Inter SemiBold
+SIL Open Font License. Instantiated from the icon library variable Inter.
+See Inter-OFL.txt.
+
+Montserrat Regular / Medium
+SIL Open Font License. Fallback UI sans.
+
+League Spartan SemiBold
+SIL Open Font License. Fallback title.
+
+Font Awesome 7 Free Solid
+Font Awesome Free license.
+Close        fa-solid fa-xmark      U+F00D
+Aimbot       fa-solid fa-crosshairs U+F05B
+ESP          fa-solid fa-eye        U+F06E
+Settings     fa-solid fa-gear       U+F013
+Chevron      fa-solid fa-chevron-down U+F078
+Family "Font Awesome 7 Free Solid" / "Font Awesome 7 Free".
+
+CustomIconPack DOPAMINA
+Family name is Untitled. The A–F notes do not match the cmap
+(U+F000 is an eye). Not used for nav tabs.

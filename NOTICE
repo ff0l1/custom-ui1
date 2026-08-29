@@ -1,0 +1,13 @@
+ImgU2
+
+The drawing core in src/engine is adapted from custom-framework.
+https://github.com/ff0l/custom-framework
+
+custom-framework's engine started from Atlas.
+https://github.com/0Zayn/Atlas
+
+Fonts shipped under assets/fonts are listed in assets/fonts/NOTICE.txt.
+Inter, Montserrat, and League Spartan are SIL Open Font License.
+Font Awesome 7 Free Solid is under the Font Awesome Free license.
+
+Windows, Win32, and Direct3D 11 are part of the Windows SDK.

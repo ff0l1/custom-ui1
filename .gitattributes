@@ -1,0 +1,4 @@
+* text=auto
+docs/*.mp4 binary
+*.ttf binary
+*.otf binary
