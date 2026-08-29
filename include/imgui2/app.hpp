@@ -8,7 +8,7 @@ namespace imgui2 {
 namespace app {
 
 struct Config {
-    const char* title = "imgui-2";
+    const char* title = "custom-ui-1";
     bool vsync = true;
     bool topmost = true;
     float font_size = 15.0f;

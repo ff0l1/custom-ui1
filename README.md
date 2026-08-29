@@ -1,12 +1,12 @@
-# imgui-2
+# custom-ui-1
 
 A glass overlay UI for Windows. Immediate-mode C++, Win32, and Direct3D 11.
 
 <p align="center">
-  <img src="docs/preview.webp" alt="imgui-2 preview">
+  <img src="docs/preview.webp" alt="custom-ui-1 preview">
 </p>
 
-imgui-2 is built on [custom-framework](https://github.com/ff0l/custom-framework) — the same drawing core, fonts, input, and Direct3D 11 host. Overlay chrome, glass styling, click-through, and the `imgui2` API are new.
+custom-ui-1 is built on [custom-framework](https://github.com/ff0l/custom-framework) — the same drawing core, fonts, input, and Direct3D 11 host. Overlay chrome, glass styling, click-through, and the `imgui2` API are new.
 
 ```
 Overlay → Direct3D 11 → imgui2 → UI
@@ -34,7 +34,7 @@ cmake --preset windows-release
 cmake --build --preset windows-release
 ```
 
-Or `tools\build-release.bat`. Run `build/windows-release/imgui-2.exe`. Keep `assets/` next to the executable.
+Or `tools\build-release.bat`. Run `build/windows-release/custom-ui-1.exe`. Keep `assets/` next to the executable.
 
 ## Hello
 
@@ -43,9 +43,9 @@ Or `tools\build-release.bat`. Run `build/windows-release/imgui-2.exe`. Keep `ass
 
 int WINAPI WinMain( HINSTANCE, HINSTANCE, LPSTR, int ) {
     imgui2::app::Config Config;
-    Config.title = "imgui-2";
+    Config.title = "custom-ui-1";
     return imgui2::app::run( Config, [ ] {
-        if ( imgui2::ui::window Window( "imgui-2" ); Window )
+        if ( imgui2::ui::window Window( "custom-ui-1" ); Window )
             imgui2::ui::label( "A quiet overlay. Close when you are done." );
     } );
 }

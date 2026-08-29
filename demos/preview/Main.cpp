@@ -7,7 +7,7 @@
 
 int WINAPI WinMain( HINSTANCE, HINSTANCE, LPSTR, int ) {
     imgui2::app::Config Config;
-    Config.title = "imgui-2";
+    Config.title = "custom-ui-1";
     Config.vsync = true;
     Config.topmost = true;
     Config.atmosphere = 0;
@@ -48,7 +48,7 @@ int WINAPI WinMain( HINSTANCE, HINSTANCE, LPSTR, int ) {
         imgui2::style::apply( Theme );
         imgui2::effects::set_background( Atmosphere );
 
-        if ( imgui2::ui::window Window( "imgui-2" ); Window ) {
+        if ( imgui2::ui::window Window( "custom-ui-1" ); Window ) {
             if ( imgui2::ui::page( ) == imgui2::ui::Page::Aimbot ) {
                 imgui2::ui::label( "Aimbot" );
                 imgui2::ui::check( "Enable", Enabled, AimKey );

@@ -1,13 +1,13 @@
 cmake_minimum_required( VERSION 3.20 )
 
-project( imgui-2 LANGUAGES CXX )
+project( custom-ui-1 LANGUAGES CXX )
 
 set( CMAKE_CXX_STANDARD 20 )
 set( CMAKE_CXX_STANDARD_REQUIRED ON )
 set( CMAKE_CXX_EXTENSIONS OFF )
 
 if( NOT WIN32 )
-    message( FATAL_ERROR "imgui-2 builds on Windows." )
+    message( FATAL_ERROR "custom-ui-1 builds on Windows." )
 endif( )
 
 set( Engine ${CMAKE_CURRENT_SOURCE_DIR}/src/engine )
@@ -94,9 +94,9 @@ function( imgui2_add_app Target )
     )
 endfunction( )
 
-option( IMGUI2_BUILD_PREVIEW "Build the imgui-2 preview overlay" ON )
+option( IMGUI2_BUILD_PREVIEW "Build the custom-ui-1 preview overlay" ON )
 
 if( IMGUI2_BUILD_PREVIEW )
     imgui2_add_app( imgui2_preview demos/preview/Main.cpp )
-    set_target_properties( imgui2_preview PROPERTIES OUTPUT_NAME imgui-2 )
+    set_target_properties( imgui2_preview PROPERTIES OUTPUT_NAME custom-ui-1 )
 endif( )

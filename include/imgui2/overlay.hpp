@@ -4,7 +4,7 @@ namespace imgui2 {
 namespace overlay {
 
 struct Options {
-    const char* title = "imgui-2";
+    const char* title = "custom-ui-1";
     bool topmost = true;
 };
 
