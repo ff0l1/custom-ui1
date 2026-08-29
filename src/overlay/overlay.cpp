@@ -140,7 +140,7 @@ bool create( const Options& Options ) {
     if ( !RegisterClassExW( &Description ) )
         return false;
 
-    const char* TitleUtf8 = Options.title ? Options.title : "ImgU2";
+    const char* TitleUtf8 = Options.title ? Options.title : "imgui-2";
     int TitleCount = MultiByteToWideChar( CP_UTF8, 0, TitleUtf8, -1, nullptr, 0 );
     std::wstring Title( TitleCount > 0 ? ( size_t )TitleCount : 1, 0 );
     if ( TitleCount > 0 )
