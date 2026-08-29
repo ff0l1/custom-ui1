@@ -3,6 +3,10 @@
 A glass overlay UI for Windows. Immediate-mode C++, Win32, and Direct3D 11.
 
 <p align="center">
+  <img src="docs/menu.png" alt="custom-ui-1">
+</p>
+
+<p align="center">
   <img src="docs/preview.webp" alt="custom-ui-1 preview">
 </p>
 

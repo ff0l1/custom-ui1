@@ -1,5 +1,6 @@
 * text=auto
 docs/*.mp4 binary
 docs/*.webp binary
+docs/*.png binary
 *.ttf binary
 *.otf binary
