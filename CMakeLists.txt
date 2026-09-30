@@ -13,31 +13,31 @@ endif( )
 set( Engine ${CMAKE_CURRENT_SOURCE_DIR}/src/engine )
 
 set( Imgui2Sources
-    ${Engine}/Core/Arena/Arena.cpp
-    ${Engine}/Core/Context/Context.cpp
-    ${Engine}/Core/Input/Input.cpp
-    ${Engine}/Text/Font/Font.cpp
-    ${Engine}/Text/Format/Format.cpp
-    ${Engine}/Text/Sheet/Sheet.cpp
-    ${Engine}/Interface/Style/Style.cpp
-    ${Engine}/Ports/Canvas/Canvas.cpp
-    ${Engine}/Ports/Shaders/Shaders.cpp
-    ${Engine}/Ports/Platform/Native/Native.cpp
-    ${Engine}/Ports/Graphics/DirectX11/DirectX11.cpp
-    src/host/ElevenHost.cpp
-    src/app/engine.cpp
-    src/app/app.cpp
-    src/overlay/overlay.cpp
-    src/resources/assets.cpp
-    src/resources/fonts.cpp
-    src/effects/effects.cpp
-    src/ui/interact.cpp
-    src/ui/motion.cpp
-    src/ui/state.cpp
-    src/ui/theme.cpp
-    src/ui/sidebar.cpp
-    src/ui/controls.cpp
-    src/ui/window.cpp
+    ${Engine}/Core/Arena/Arena.cxx
+    ${Engine}/Core/Context/Context.cxx
+    ${Engine}/Core/Input/Input.cxx
+    ${Engine}/Text/Font/Font.cxx
+    ${Engine}/Text/Format/Format.cxx
+    ${Engine}/Text/Sheet/Sheet.cxx
+    ${Engine}/Interface/Style/Style.cxx
+    ${Engine}/Ports/Canvas/Canvas.cxx
+    ${Engine}/Ports/Shaders/Shaders.cxx
+    ${Engine}/Ports/Platform/Native/Native.cxx
+    ${Engine}/Ports/Graphics/DirectX11/DirectX11.cxx
+    src/host/ElevenHost.cxx
+    src/app/engine.cxx
+    src/app/app.cxx
+    src/overlay/overlay.cxx
+    src/resources/assets.cxx
+    src/resources/fonts.cxx
+    src/effects/effects.cxx
+    src/ui/interact.cxx
+    src/ui/motion.cxx
+    src/ui/state.cxx
+    src/ui/theme.cxx
+    src/ui/sidebar.cxx
+    src/ui/controls.cxx
+    src/ui/window.cxx
 )
 
 add_library( imgui2 STATIC ${Imgui2Sources} )
@@ -97,6 +97,6 @@ endfunction( )
 option( IMGUI2_BUILD_PREVIEW "Build the custom-ui-1 preview overlay" ON )
 
 if( IMGUI2_BUILD_PREVIEW )
-    imgui2_add_app( imgui2_preview demos/preview/Main.cpp )
+    imgui2_add_app( imgui2_preview demos/preview/Main.cxx )
     set_target_properties( imgui2_preview PROPERTIES OUTPUT_NAME custom-ui-1 )
 endif( )

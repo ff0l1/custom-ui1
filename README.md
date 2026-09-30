@@ -1,33 +1,26 @@
-# custom-ui-1
+# Glass UI
 
-A glass overlay UI for Windows. Immediate-mode C++, Win32, and Direct3D 11.
+A glass overlay for Windows. Immediate-mode C++, Win32, Direct3D 11. Clicks on the panel stay with the menu. Clicks outside pass through to the desktop. Close with the X.
 
 <p align="center">
-  <img src="docs/menu.png" alt="custom-ui-1">
+  <img src="docs/menu.png" alt="Glass UI">
 </p>
 
 <p align="center">
-  <img src="docs/preview.webp" alt="custom-ui-1 preview">
+  <img src="docs/preview.webp" alt="Glass UI preview">
 </p>
 
-custom-ui-1 is built on [custom-framework](https://github.com/ff0l/custom-framework) — the same drawing core, fonts, input, and Direct3D 11 host. Overlay chrome, glass styling, click-through, and the `imgui2` API are new.
+The drawing core, fonts, and input started from [ur](https://github.com/ff0l1/ur). The overlay window, glass styling, click-through, and the `imgui2` API are this repo.
 
 ```
-Overlay → Direct3D 11 → imgui2 → UI
+overlay → Direct3D 11 → imgui2 → panel
 ```
 
-Clicks on the panel stay with the menu. Clicks outside pass through to the desktop. Close with the X.
+## On the panel
 
-## What you get
+One glass panel: rail, pages, short motion. Checks, keybinds, sliders, single-select and multi-select. Themes are Rose, Mocha, and Forest. Backgrounds are Lightning, Galaxy, and Plasma. DPI comes from the monitor, and there is a scale slider.
 
-- Transparent layered overlay, topmost, no taskbar chrome
-- One glass panel with a rail, pages, and short motion
-- Checks, keybinds, sliders, single-select and multi-select dropdowns
-- Rose, Mocha, and Forest themes
-- Lightning, Galaxy, and Plasma backgrounds
-- DPI from the monitor, plus a scale slider
-
-The C++ namespace is `imgui2`. Include `imgui2/imgui2.hpp`.
+Include `imgui2/imgui2.hxx`. The namespace is `imgui2`.
 
 ## Build
 
@@ -43,32 +36,26 @@ Or `tools\build-release.bat`. Run `build/windows-release/custom-ui-1.exe`. Keep 
 ## Hello
 
 ```cpp
-#include "imgui2/imgui2.hpp"
+#include "imgui2/imgui2.hxx"
 
 int WINAPI WinMain( HINSTANCE, HINSTANCE, LPSTR, int ) {
     imgui2::app::Config Config;
-    Config.title = "custom-ui-1";
+    Config.title = "glass";
     return imgui2::app::run( Config, [ ] {
-        if ( imgui2::ui::window Window( "custom-ui-1" ); Window )
-            imgui2::ui::label( "A quiet overlay. Close when you are done." );
+        if ( imgui2::ui::window Window( "glass" ); Window )
+            imgui2::ui::label( "Drag the header to move." );
     } );
 }
 ```
 
-Drag the header to move the panel.
-
-## Tree
+## Files
 
 ```
-include/imgui2      public headers
-src/app             run loop, scale, fps cap
-src/overlay         layered Win32 window
-src/ui              panel, rail, widgets
-src/effects         reactive backgrounds
-src/engine          canvas, fonts, input, D3D11
-src/host            Eleven host
-demos/preview       bundled menu
-docs                preview on this page
+include/imgui2    public headers
+src/overlay       layered Win32 window
+src/ui            panel, rail, widgets
+src/effects       backgrounds
+src/engine        canvas, fonts, input, D3D11
+demos/preview
+docs/
 ```
-
-The engine in `src/engine` started from [custom-framework](https://github.com/ff0l/custom-framework).
