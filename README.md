@@ -1,4 +1,4 @@
-# Glass UI
+# custom-ui1
 
 A glass overlay for Windows. Immediate-mode C++, Win32, Direct3D 11. Clicks on the panel stay with the menu. Clicks outside pass through to the desktop. Close with the X.
 
@@ -10,7 +10,7 @@ A glass overlay for Windows. Immediate-mode C++, Win32, Direct3D 11. Clicks on t
   <img src="docs/preview.webp" alt="Glass UI preview">
 </p>
 
-The drawing core, fonts, and input started from [ur](https://github.com/ff0l1/ur). The overlay window, glass styling, click-through, and the `imgui2` API are this repo.
+The drawing core, fonts, and input started from [ui-framework](https://github.com/ff0l1/ui-framework). The overlay window, glass styling, click-through, and the `imgui2` API are this repo.
 
 ```
 overlay → Direct3D 11 → imgui2 → panel
